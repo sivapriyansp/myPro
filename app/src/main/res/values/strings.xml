@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SHG-Succor</string>
+    <string name="todo" />
+    <string name="group_name">Group name </string>
+    <string name="invalid_name">Enter your name</string>
+    <string name="invalid_mobile">Enter your mobile number</string>
+    <string name="invalid_group">Enter your Group name</string>
+    <string name="invalid_adhar">Enter your adhar number</string>
+    <string name="invalid_place">Enter your address (or) Location</string>
+    <string name="invalid_otp">Enter the corect OTP</string>
+    <string name="invalid_password">Enter the password</string>
+    <string name="invalid_confirm_password">Password dos not match</string>
+    <string name="invalid_mail">Enter your e-mail address</string>
+</resources>
