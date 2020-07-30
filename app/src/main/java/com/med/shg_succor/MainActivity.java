@@ -18,8 +18,8 @@ import java.util.ArrayList;
 
 import static android.widget.Toast.*;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    private Spinner CustomSpinner;
+public class MainActivity extends AppCompatActivity {
+   // private Spinner CustomSpinner; implements AdapterView.OnItemSelectedListener
     private Button b1,b2,b3;
 
 
@@ -30,54 +30,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 
         b2 = findViewById(R.id.btn_president);
-        b3 = findViewById(R.id.btn_member);
+
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int2 = new Intent(MainActivity.this,Loginpre.class);
+                Intent int2 = new Intent(MainActivity.this,Signuppre.class);
                 startActivity(int2);
             }
         });
+
+        b3 = findViewById(R.id.btn_group);
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int3 = new Intent(MainActivity.this,Loginmem.class);
+                Intent int3 = new Intent(MainActivity.this,Signupmem.class);
                 startActivity(int3);
             }
         });
-        CustomSpinner =findViewById(R.id.CustomSpinner);
-
-        ArrayList<CustomsItems>customList=new ArrayList<>();
-        customList.add(new CustomsItems("ENGLISH"));
-        customList.add(new CustomsItems("TAMIL_தமிழ்"));
-        customList.add(new CustomsItems("HINDHI_हिन्दी"));
-        customList.add(new CustomsItems("MARATHI_मारथी"));
-        customList.add(new CustomsItems("GUJARATI_ગુજરાતી"));
-
-
-        CustomAdapter customAdapter = new CustomAdapter(this,customList);
-
-        if (CustomSpinner != null){
-            CustomSpinner.setAdapter(customAdapter);
-            CustomSpinner.setOnItemSelectedListener(this);
-
-        }
-    }
-
-
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        AdapterView adapterView = null;
-        CustomsItems items = (CustomsItems) adapterView. getSelectedItem();
-
-    }
-
-    private void Show() {
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
-}
+}}

@@ -22,29 +22,18 @@ import java.util.regex.Pattern;
 public class Signupmem extends AppCompatActivity {
 
     Button b1;
-    TextView textView;
-    AwesomeValidation awesomeValidation;
-
-    @RequiresApi(api = Build.VERSION_CODES.M)
+   // TextView textView;
+       @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signupmem);
-
-
+        b1 = findViewById(R.id.btn_signup);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Intent intent = new Intent(Signupmem.this,Loginpre.class);
-                    startActivity(intent);
-                }
-            });
-        textView =findViewById(R.id.condition);
-        textView.setOnContextClickListener(new View.OnContextClickListener() {
-            @Override
-            public boolean onContextClick(View v) {
-                Intent intent =new Intent(Signupmem.this,Loginpre.class);
-                startActivity(intent);
-                return false;
+                Intent intent = new Intent(Signupmem.this,Loginmem.class);
             }
-        });}}
+        });
+
+       }}

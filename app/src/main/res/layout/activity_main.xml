@@ -7,16 +7,6 @@
     tools:context=".MainActivity"
     android:background="@drawable/background">
 
-    <Spinner
-        android:id="@+id/sp_language"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0sp"
-        />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -72,7 +62,7 @@
         android:text="president" />
 
     <Button
-        android:id="@+id/btn_member"
+        android:id="@+id/btn_group"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_alignParentEnd="true"
@@ -86,14 +76,13 @@
 
     <ImageView
         android:id="@+id/bankoficial"
-        android:layout_width="117dp"
-        android:layout_height="wrap_content"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
         android:layout_above="@+id/button2"
         android:layout_below="@+id/tv_welcome"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="121dp"
-        android:layout_marginBottom="-10dp"
-        android:src="@drawable/bank_oficial" />
+        android:src="@drawable/bank_oficial"
+        android:visibility="visible"/>
 
     <ImageView
         android:id="@+id/imageView3"

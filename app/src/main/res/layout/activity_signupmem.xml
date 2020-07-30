@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".Signupmem"
     android:background="@drawable/background"
-    android:padding="15dp">
+    android:padding="15dp"
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -116,20 +117,6 @@
                     android:layout_height="wrap_content"
                     android:hint="Aadhar Number"
                     android:inputType="number"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Text_input_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:errorEnabled="true">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="E-mail"
-                    android:inputType="textEmailAddress"
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
