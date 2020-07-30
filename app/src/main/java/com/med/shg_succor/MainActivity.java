@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             CustomSpinner.setOnItemSelectedListener(this);
 
         }
-
     }
 
 
