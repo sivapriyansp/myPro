@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import static android.widget.Toast.*;
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Spinner CustomSpinner;
     private Button b1,b2,b3;
@@ -69,8 +71,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         AdapterView adapterView = null;
         CustomsItems items = (CustomsItems) adapterView. getSelectedItem();
-
-        //Toast toast =Toast.makeText(this,items.getSpinnerText(),Toast.LENGTH_SHORT).show();
 
     }
 
