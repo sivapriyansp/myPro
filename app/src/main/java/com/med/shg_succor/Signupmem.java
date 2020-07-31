@@ -20,19 +20,32 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.util.regex.Pattern;
 
 public class Signupmem extends AppCompatActivity {
-
-    Button b1;
-   // TextView textView;
+    //con't enter b2 or OTP-btn
+    Button b1,b2;
+   TextView textView;
        @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signupmem);
-        b1 = findViewById(R.id.btn_signup);
+        b1 = findViewById(R.id.butt_sigup);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Signupmem.this,Loginmem.class);
+                Intent intent1 = new Intent(Signupmem.this,Dashboard.class);
+                startActivity(intent1);
+            }
+        });
+
+        textView = findViewById(R.id.logincondition);
+        textView.setOnClickListener(new View.OnClickListener() {
+            private Object Loginmem;
+
+            @Override
+            public void onClick(View v) {
+                Intent intent2 =new Intent(Signupmem.this, Loginmem.class);
+                startActivity(intent2);
+
             }
         });
 

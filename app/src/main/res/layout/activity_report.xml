@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report">
+
+    <TextView android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/Members_Report" android:background="#DC7474" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Members Report" android:textAllCaps="true" />
+    <HorizontalScrollView android:scrollbarSize="3dp" android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="60dp" android:layout_below="@+id/Members_Report">
+        <LinearLayout android:orientation="horizontal" android:background="#DF81EF" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/member1" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Member" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/previous_Investment" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Previous  investment" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/investment_1" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Investment" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/total_investment" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Total    Investment" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/loan_balance_previous" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Loan balance previously" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/loan_repay" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Loan Repayed" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/loan_balance" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Loan Balance" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/weekly_pay" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="weekly pay" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/other_payment" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="others" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+            <View android:background="#F66868" android:layout_width="1dp" android:layout_height="match_parent" />
+            <TextView android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/total" android:layout_width="120dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Total" android:textAllCaps="true"
+                android:layout_marginStart="5dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <view class="androidx.appcompat.app.AlertController$RecycleListView" android:scrollbarSize="5dp" android:id="@+id/recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/Members_Report" />
+</RelativeLayout>
+

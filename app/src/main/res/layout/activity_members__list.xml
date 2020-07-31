@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Members_List">
+
+    <TextView
+        android:id="@+id/no_members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currently there are no members"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_member_list"
+        android:layout_width="match_parent"
+        android:background="#B3E688"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/backarrow"
+        app:title="Members List"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="{4:1092616192}"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_weight="{4:1092616192}"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/lin_layout1"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="120sp"
+                    android:layout_marginBottom="10sp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/add_member"
+                    android:layout_marginStart="120sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="Add Member"
+                    android:textColor="#000"
+                    android:layout_marginStart="10sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:layout_marginTop="50dp"
+        android:scrollbars="vertical"/>
+</RelativeLayout>

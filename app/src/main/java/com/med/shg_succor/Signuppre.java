@@ -19,8 +19,8 @@ import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class Signuppre extends AppCompatActivity {
-
-    Button b1;
+    //n't enter the b2 OTPbtn
+    Button b1,b2;
     TextView textView;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -29,20 +29,22 @@ public class Signuppre extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signuppre);
 
-        textView= findViewById(R.id.condition);
-        textView.setOnContextClickListener(new View.OnContextClickListener() {
+        textView= (TextView) findViewById(R.id.condition);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onContextClick(View v) {
+            public void onClick(View v) {
                 Intent intent =new Intent(Signuppre.this,Loginpre.class);
                 startActivity(intent);
-                return false;
+
             }
         });
-        b1 = findViewById(R.id.btn_signup);
+        b1 = findViewById(R.id.butt_sigup);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Signuppre.this, Loginpre.class);
+                Intent intent = new Intent(Signuppre.this, Dashboard.class);
                 startActivity(intent);
             }});
+
+
     }}

@@ -76,13 +76,15 @@
 
     <ImageView
         android:id="@+id/bankoficial"
-        android:layout_width="100sp"
-        android:layout_height="100sp"
+        android:layout_width="110sp"
+        android:layout_height="110sp"
         android:layout_above="@+id/button2"
         android:layout_below="@+id/tv_welcome"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="-71dp"
         android:src="@drawable/bank_oficial"
-        android:visibility="visible"/>
+        android:visibility="visible" />
 
     <ImageView
         android:id="@+id/imageView3"

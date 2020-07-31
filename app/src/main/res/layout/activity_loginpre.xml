@@ -31,7 +31,8 @@
         android:id="@+id/Text_input_mobile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:errorEnabled="true">
+        app:errorEnabled="true"
+        app:counterMaxLength="10">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -45,7 +46,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:counterEnabled="true"
-        app:errorEnabled="true">
+        app:errorEnabled="true"
+        app:counterMaxLength="5">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -64,7 +66,7 @@
         />
 
     <Button
-        android:id="@+id/butt_loginpre"
+        android:id="@+id/but_loginpre"
         android:layout_width="match_parent"
         android:background="@drawable/button_custom"
         android:layout_height="wrap_content"
@@ -85,6 +87,7 @@
         android:layout_marginBottom="147dp"
         android:gravity="center"
         android:text="No account yet? Create one"
+        android:textStyle="bold"
         android:textAlignment="center" />
 
 
